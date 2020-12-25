@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar  flat fixed  dark style="background-color:#673faf" >
+  <v-app-bar  flat fixed  dark  >
     <v-layout justify-center>
       <v-container>
         <v-layout>
@@ -32,7 +32,7 @@
               :x-small="$vuetify.breakpoint.smAndDown"
               @click="$vuetify.goTo('#donate',options )"
 
-            >Donate</v-btn>
+            >Ways to Help</v-btn>
           </v-toolbar-items>
         </v-layout>
       </v-container>

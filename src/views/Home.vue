@@ -5,21 +5,21 @@
 
 
     <v-img
-      dark
+      style="opacity: 0.5;"
       max-height="500px"
-      src="https://i.pinimg.com/originals/b9/c8/f8/b9c8f893c9a782033a01f47e0c0b1d6e.jpg"
+      src="https://opportunitydesk.org/wp-content/uploads/2016/04/African-Students.jpg"
     >
       <v-layout fill-height align-center>
         <v-container>
           <v-row align="center" justify="center" class="white--text">
             <v-col cols="12">
-              <div style="position: relative;width: 66%;float: right;"
+              <div style="position: relative;"
               >
-              <h2 class="text-center">Whats Happening </h2>
               <br>
-              <p style="font-family: 'Roboto';">
-              On the 4th of November, Tigray was cut off from communication and banks were closed. This has affected the people there on a major scale. We have seen a major humanitarian crisis unfold in front of our eyes. Following this, many fled to Sudan to seek refuge. Prior to the 4th of November, Addis Ababa University’s(AAU) graduating students had been called to campus to complete their last few months of education and present their final-year thesis. The ongoing war in Tigray has affected AAU students from Tigray gravely. As is the case for many university students in Ethiopia, students rely on family for financial support. As the bank is closed and there is very limited to no means of contacting their families, these students have been struggling to continue their education and cover their cost of living. As graduation date nears, we worry what will come of the students without the help of their families and no Dorm to live in.
-              </p>
+              <br>
+              <div class="display-1 font-weight-bold text-center text-uppercase" id="mission">
+                <p style="font-size: xxx-large; color: #000; opacity:1;">Let’s support our fellow students </p>
+                <p style="font-size: xxx-large; color: #000;  opacity:1 !important;">  in need of our help </p></div>
               </div>
             </v-col>
           </v-row>
@@ -27,22 +27,27 @@
       </v-layout>
     </v-img>
     <v-container  class="my-5">
-      <v-layout wrap>
+      <v-layout wrap my-5>
         <v-flex xs12>
           <div class="display-1 font-weight-bold" id="mission">Our Mission</div>
         </v-flex>
         <v-flex xs12 mt-5>
           <div class="body-1">{{missionText}}</div>
-          <div
-            class="body-1 mt-3"
-          >
-          Additional
-          </div>
+         </v-flex>
+      </v-layout>
+            <v-layout wrap my-5>
+        <v-flex xs12>
+          <div class="display-1 font-weight-bold" id="mission">What is the Issue?</div>
+        </v-flex>
+        <v-flex xs12 mt-5>
+          <div class="body-1">{{issueText}}</div>
+
         </v-flex>
       </v-layout>
+
       <v-layout wrap my-5>
         <v-flex xs12>
-          <div class="display-1 font-weight-bold" id="stories">Stories</div>
+          <div class="display-1 font-weight-bold" id="stories">Who do we help?</div>
         </v-flex>
         <v-flex xs12 class="mt-2">
           <br>
@@ -90,8 +95,9 @@ export default {
   },
   data() {
     return {
+      issueText:'Currently, Ethiopia is going through a severe humanitarian crisis. Due to the ongoing conflict between the Ethiopian federal government and the Tigray regional government, a massive surge of people getting displaced to other neighboring countries and internal crisis has originated. Because of the current absence of peace and stability, Tigray students are one of the communities that are affected the most.',
       missionText:
-        "Our mission is to alleviate the financial difficulties faced by AAU students from Tigray by mobilizing donations from generous donors. The donations will ensure that the students can rent a place and get other basic necessities after they graduate and leave campus so they can search for a job and support themselves.",
+        "Our mission is to alleviate the financial difficulties faced by AAU students from Tigray by mobilizing donations from generous donors like you.",
 
       stories: [
         {
