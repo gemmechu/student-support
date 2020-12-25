@@ -15,24 +15,36 @@
             >Mission</v-btn>
             <v-btn
               :x-small="$vuetify.breakpoint.smAndDown"
-              @click="$vuetify.goTo('#stories',options )"
+              @click="$vuetify.goTo('#goal',options )"
               text
-            >Stories</v-btn>
+            >Goal</v-btn>
              <v-btn
+              :x-small="$vuetify.breakpoint.smAndDown"
+              @click="$vuetify.goTo('#issue',options )"
+              text
+            >Issue</v-btn>
+            <v-btn
               :x-small="$vuetify.breakpoint.smAndDown"
               @click="$vuetify.goTo('#students',options )"
               text
             >Students</v-btn>
-            <v-btn
-              :x-small="$vuetify.breakpoint.smAndDown"
-              @click="$vuetify.goTo('#contact',options )"
-              text
-            >Contact</v-btn>
              <v-btn
               :x-small="$vuetify.breakpoint.smAndDown"
-              @click="$vuetify.goTo('#donate',options )"
+              @click="$vuetify.goTo('#impact',options )"
 
-            >Ways to Help</v-btn>
+            >impact</v-btn>
+            <v-btn
+              :x-small="$vuetify.breakpoint.smAndDown"
+              @click="$vuetify.goTo('#help',options )"
+
+            >ways to help</v-btn>
+            <v-btn
+              :x-small="$vuetify.breakpoint.smAndDown"
+              @click="$vuetify.goTo('#aboutUs',options )"
+
+            >About Us</v-btn>
+
+
           </v-toolbar-items>
         </v-layout>
       </v-container>

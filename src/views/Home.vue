@@ -61,7 +61,7 @@
       </v-layout>
       <v-layout wrap my-5>
         <v-flex xs12>
-          <div class="heading font-weight-bold" id="mission">
+          <div class="heading font-weight-bold" id="issue">
             What is the Issue
           </div>
         </v-flex>
@@ -72,7 +72,7 @@
 
       <v-layout wrap my-5>
         <v-flex xs12>
-          <div class="heading font-weight-bold" id="stories">
+          <div class="heading font-weight-bold" id="students">
             Who do we help
           </div>
         </v-flex>
@@ -95,7 +95,7 @@
       </v-layout>
       <v-layout wrap my-5>
         <v-flex xs12 mb-5>
-          <div class="heading text-center" id="students">
+          <div class="heading text-center" id="">
             Full Students list
           </div>
         </v-flex>
@@ -107,7 +107,7 @@
       </v-layout>
       <v-layout wrap my-5>
         <v-flex xs12>
-          <div class="heading font-weight-bold" id="mission">
+          <div class="heading font-weight-bold" id="impact">
             How does your donation make an Impact
           </div>
         </v-flex>
@@ -121,7 +121,7 @@
             <v-icon v-text="item.icon" style = "font-size:15px"></v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title v-text="item.text"></v-list-item-title>
+            <v-list-item-title style="font-size: larger;font-family: Roboto;font-weight: 400;" v-text="item.text"></v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -131,7 +131,7 @@
       </v-layout>
       <v-layout wrap my-5>
         <v-flex xs12>
-          <div class="heading font-weight-bold" id="mission">Ways to help</div>
+          <div class="heading font-weight-bold" id="help">Ways to help</div>
         </v-flex>
         <v-flex xs12 mt-5>
         <v-list-item>
@@ -171,11 +171,17 @@
       </v-layout>
       <v-layout wrap my-5>
         <v-flex xs12>
-          <div class="heading font-weight-bold" id="mission">About Us</div>
+          <div class="heading font-weight-bold" id="aboutUs">About Us</div>
         </v-flex>
         <v-flex xs12 mt-5>
-          <div class="body-1">{{ issueText }}</div>
+          <div class="body-1">{{ aboutText }}</div>
         </v-flex>
+         <template v-for="(info, i) in infos">
+          <v-flex sm4 md4 xs6 :key="i">
+            <aboutUs :info="info" />
+          </v-flex>
+        </template>
+
       </v-layout>
     </v-container>
   </div>
@@ -205,6 +211,7 @@
 import studentInfo from "@/components/studentInfo.vue";
 import myCard from "@/components/myCard.vue";
 import myCard2 from "@/components/myCard2.vue";
+import aboutUs from '@/components/aboutUs.vue';
 export default {
   name: "home",
   components: {
@@ -212,13 +219,42 @@ export default {
     studentInfo,
     myCard,
     myCard2,
+    aboutUs
   },
   data() {
     return {
+      aboutText: "We are students from in AAU and from concordia trying to help students in AAU who are struggling because of current ongoing war in Tigray",
+      infos:[
+        {
+          img: "dave.png",
+          name: "Ahmed Seid",
+          dept: "Business Management & Finance",
+          school: "A Junior at the Concordia College in Moorhead",
+          email: "mailto:ahmegoal@gmail.com",
+          phone: true
+          },
+          {
+          img: "dave.png",
+          name: "Simret Araya",
+          dept: "Software Engineering",
+          school: "Addis Ababa University",
+          email: "mailto:simretaraya7@gmail.com",
+          phone: false
+          },
+          {
+          img: "dave.png",
+          name: "Gemmechu Mohammed",
+          dept: "Software Engineering",
+          school: "Addis Ababa University",
+          email: "mailto:gemmechumohammed@gmail.com",
+          phone: false
+          },
+
+      ],
       whyDonation: [
-        { text: 'Real-Time', icon: 'mdi-circle' },
-        { text: 'Audience', icon: 'mdi-circle' },
-        { text: 'Conversions', icon: 'mdi-circle' },
+        { text: 'Give students to rent place to stay while searching a job', icon: 'mdi-circle' },
+        { text: 'cover basic expenses Taxi, mobile air time, Grossaries', icon: 'mdi-circle' },
+        { text: 'Allow students to be independent', icon: 'mdi-circle' },
       ],
       missionText:
         "Our mission is to alleviate the financial difficulties faced by AAU students from Tigray by mobilizing donations from generous donors like you.",
