@@ -14,7 +14,7 @@
 <script>
 export default {
   props: {
-    student: {
+    about: {
       type: Object,
       default: function() {
         return {};

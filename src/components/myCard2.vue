@@ -8,7 +8,7 @@
 
             <v-col class="ml-10"  style="flex-grow: 0;">
               <p
-                style="line-height: 26px;font-size: 15px;font-style: italic; width: 48em;"
+                style="color: #333;font-family: minion-pro;font-style: italic;width: 45em;"
               >
                 <span class="mx-3" style="font-size: x-large; font-weight: 600;">" </span>
                 {{story.summary}}
@@ -27,7 +27,7 @@
             </v-col>
              <img
                 class="mx-3"
-                src="@/assets/uzir.png"
+                :src="require('@/assets/' + story.img + '')"
                 width="26%"
             />
           </v-row>

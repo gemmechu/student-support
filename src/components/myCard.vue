@@ -7,15 +7,12 @@
           <v-row>
             <img
                 class="mx-3"
-                src="@/assets/uzir.png"
+                :src="require('@/assets/' + story.img + '')"
                 width="26%"
             />
             <v-col class="mx-5">
               <p
-                style="line-height: 26px;
-                font-size: 15px;
-                font-style: italic;
-                width: 48em;"
+                style="color: #333;font-family: minion-pro;font-style: italic;width: 45em;"
               >
                 <span class="mx-3" style="font-size: x-large; font-weight: 600;">" </span>
                   {{story.summary}}

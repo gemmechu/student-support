@@ -1,9 +1,9 @@
 <template>
-  <v-app-bar  flat fixed  dark  >
+  <v-app-bar fixed flat dark  >
     <v-layout justify-center>
       <v-container>
         <v-layout>
-          <div
+          <div style="font-style: italic;font-family: serif !important;font-size: 1.625rem !important;"
             :class="{'display-1 font-weight-bold': $vuetify.breakpoint.smAndUp,'title font-weight-bold': $vuetify.breakpoint.smAndDown, }"
           >Help Students</div>
           <v-spacer></v-spacer>
