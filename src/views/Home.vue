@@ -65,8 +65,12 @@
             What is the Issue
           </div>
         </v-flex>
-        <v-flex xs12 mt-5>
+        <v-flex xs8 mt-5>
           <div class="body-1">{{ issueText }}</div>
+        </v-flex>
+        <v-flex>
+          <!-- <iframe width="545" height="438" src="https://www.youtube.com/embed/pb7_YJp9bVA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <iframe class ="my-3" width="100%" height="100%" src="https://www.youtube.com/embed/pb7_YJp9bVA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </v-flex>
       </v-layout>
 
