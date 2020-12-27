@@ -1,16 +1,12 @@
 <template>
- <div
-          max-width="900"
-
-
-        >
+ <div max-width="900">
           <v-row>
 
-            <v-col class="ml-10"  style="flex-grow: 0;">
+            <v-col xs8 class="col-sm-8 mx-3">
               <p
-                style="color: #333;font-family: minion-pro;font-style: italic;width: 45em;"
+                style="color: #333;font-family: minion-pro;font-style: italic;"
               >
-                <span class="mx-3" style="font-size: x-large; font-weight: 600;">" </span>
+                <span class="mx-2" style="font-size: x-large; font-weight: 600;">" </span>
                 {{story.summary}}
                  <span class="mx-2" style="font-size: x-large; font-weight: 600;">"</span>
                  <br>
@@ -20,15 +16,17 @@
 
                 >
                   <b>{{story.name}} </b>
-                  <v-btn small class="mx-3">Read-more</v-btn>
+                  <v-btn :href="story.link" target="blank"  small class="mx-3">Read-more</v-btn>
                 </v-card-subtitle>
               </p>
 
             </v-col>
-             <img
-                class="mx-3"
+             <v-img
+              contain
+                class="mx-2 col-sm-3"
+                position="top"
                 :src="require('@/assets/' + story.img + '')"
-                width="26%"
+
             />
           </v-row>
         </div>

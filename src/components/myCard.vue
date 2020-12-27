@@ -5,16 +5,18 @@
 
         >
           <v-row>
-            <img
-                class="mx-3"
+            <v-img
+                contain
+                position="top"
+                xs3
+                class="mx-3 col-sm-3"
                 :src="require('@/assets/' + story.img + '')"
-                width="26%"
             />
-            <v-col class="mx-5">
+            <v-col xs8 class="col-sm-8 mx-2">
               <p
-                style="color: #333;font-family: minion-pro;font-style: italic;width: 45em;"
+                style="color: #333;font-family: minion-pro;font-style: italic;"
               >
-                <span class="mx-3" style="font-size: x-large; font-weight: 600;">" </span>
+                <span class="mx-2" style="font-size: x-large; font-weight: 600;">" </span>
                   {{story.summary}}
                  <span class="mx-2" style="font-size: x-large; font-weight: 600;">"</span>
                   <br>
@@ -23,7 +25,7 @@
                   style="font-size: 16px"
                 >
                   <b> {{story.name}} </b>
-                  <v-btn small class="mx-3">Read-more</v-btn>
+                  <v-btn :href="story.link" target="blank" small class="mx-3">Read-more</v-btn>
                 </v-card-subtitle>
               </p>
             </v-col>

@@ -10,7 +10,7 @@
       <v-layout
         fill-height
         align-center
-        style="background: white; opacity: 0.8"
+        style="background: white; opacity: 0.77"
       >
         <v-container>
           <v-row align="center" justify="center" class="white--text">
@@ -32,9 +32,10 @@
                     in need of our help
                   </h1>
                   <h2 class="qoute" style="">
-                    Kindness is all about giving and has nothing to do with
-                    getting
+                    Kindness is Giving hope to those who think they are all alone in this world
+                    <span style="color: black;font-size: smaller;"> - paktivist</span>
                   </h2>
+
                 </div>
               </div>
             </v-col>
@@ -65,12 +66,12 @@
             What is the Issue
           </div>
         </v-flex>
-        <v-flex xs8 mt-5>
+        <v-flex xs12 sm6 mt-5>
           <div class="body-1">{{ issueText }}</div>
         </v-flex>
-        <v-flex>
-          <!-- <iframe width="545" height="438" src="https://www.youtube.com/embed/pb7_YJp9bVA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        <iframe class ="my-3" width="100%" height="100%" src="https://www.youtube.com/embed/pb7_YJp9bVA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <v-flex sm4>
+
+        <iframe class ="my-3" width="100%" height="100%" src="https://www.youtube.com/embed/ovE_sVl1q7c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </v-flex>
       </v-layout>
 
@@ -100,7 +101,7 @@
       <v-layout wrap my-5>
         <v-flex xs12 mb-5>
           <div class="heading text-center" id="">
-            Full Students list
+            Students list
           </div>
         </v-flex>
         <template v-for="(student, i) in students">
@@ -118,11 +119,12 @@
         <v-flex xs12 mt-5 mx-8>
               <v-list dense>
         <v-list-item
+
           v-for="(item, i) in whyDonation"
           :key="i"
         >
           <v-list-item-icon>
-            <v-icon v-text="item.icon" style = "font-size:15px"></v-icon>
+            <v-icon v-text="item.icon" style = "font-size:1em"></v-icon>
           </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title style="font-size: larger;font-family: Roboto;font-weight: 400;" v-text="item.text"></v-list-item-title>
@@ -152,12 +154,12 @@
         <v-list-item>
             <v-col cols="sm-4">
             <v-icon style = "font-size:15px">mdi-circle</v-icon>
-            <span class="mx-6" style="font-size: larger;font-family: 'Roboto';font-weight: 500;">Posting on social media </span>
+            <span class="mx-6" style="font-size: larger;font-family: 'Roboto';font-weight: 500;">Share it on</span>
             </v-col>
 
-            <v-col cols="6" sm = "2" align-self="center"><a href=""><v-img width="30%" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-facebook-circle-512.png"/></a> </v-col>
-            <v-col cols="6" sm = "2" align-self="center"><a href=""><v-img width="30%"  src="https://i.dlpng.com/static/png/6326845_preview.png"/></a> </v-col>
-            <v-col cols="6" sm = "2" align-self="center"><a href=""><v-img width="30%"  src="https://assets.stickpng.com/thumbs/5a2fe3efcc45e43754640848.png"/></a> </v-col>
+            <v-col cols="2" sm = "2" align-self="center"><a href=""><v-img width="30%" src="@/assets/fb.png"/></a> </v-col>
+            <v-col cols="2" sm = "2" align-self="center"><a href=""><v-img width="30%"  src="@/assets/insta.png"/></a> </v-col>
+            <v-col cols="2" sm = "2" align-self="center"><a href=""><v-img width="30%"  src="@/assets/twitter.png"/></a> </v-col>
 
         </v-list-item>
 
@@ -230,7 +232,7 @@ export default {
       aboutText: "We are students from in AAU and from concordia trying to help students in AAU who are struggling because of current ongoing war in Tigray",
       infos:[
         {
-          img: "dave.png",
+          img: "ahmed.jpg",
           name: "Ahmed Seid",
           dept: "Business Management & Finance",
           school: "A Junior at the Concordia College in Moorhead",
@@ -238,7 +240,7 @@ export default {
           phone: true
           },
           {
-          img: "dave.png",
+          img: "simret.jpg",
           name: "Simret Araya",
           dept: "Software Engineering",
           school: "Addis Ababa University",
@@ -246,7 +248,7 @@ export default {
           phone: false
           },
           {
-          img: "dave.png",
+          img: "gemme.jpg",
           name: "Gemmechu Mohammed",
           dept: "Software Engineering",
           school: "Addis Ababa University",
@@ -266,108 +268,111 @@ export default {
         "Our goal is to ensure that the students can rent a place and get other basic necessities after they graduate and leave campus so that they can search for a job and support themselves",
 
       issueText:
-        "Currently, Ethiopia is going through a severe humanitarian crisis. Due to the ongoing conflict between the Ethiopian federal government and the Tigray regional government, a massive surge of people getting displaced to other neighboring countries and internal crisis has originated. Because of the current absence of peace and stability, Tigray students are one of the communities that are affected the most",
+        "Currently, Ethiopia is going through a severe humanitarian crisis. Due to the ongoing war between the Ethiopian federal government and the Tigray regional government, a massive surge of people getting displaced to other neighboring countries and internal crisis has originated. Because of the current absence of peace and stability, Tigray students are one of the communities that are getting affected the most",
       whotoHelpText:
-        "Prior to the Tigray crisis, Addis Ababa University’s(AAU) graduating students had been called to campus to complete their last few months of education and present their final-year thesis. The ongoing war in Tigray has affected AAU students from Tigray gravely. As is the case for many university students in Ethiopia, students rely on family for financial support. As the bank is closed and there is very limited to no means of contacting their families, these students have been struggling to continue their education and cover their cost of living. As graduation date nears, we worry what will come of the students without the help of their families and no Dorm to live in",
+        "Prior to the current crisis, Addis Ababa University’s(AAU) graduating students had been called to campus to complete their last few months of education and present their final-year thesis. Unfortunately, the ongoing war in Tigray has affected AAU students from Tigray gravely. Similar to many university students in Ethiopia, Tigray students rely on family for their financial support. As the bank is closed and there is very limited to no means of contacting their families, these students have been struggling to continue their education and cover their cost of living. As graduation date nears, we worry what will come of the students without the help of their families and no Dorm to live in",
       stories: [
         {
+          link:"https://docs.google.com/document/d/1MnVZBhc3VfEl6j1BEmZeDoE5ZiCRlEyIpa0H8SkC-Zs/edit?usp=sharing",
           img: "dave.png",
           summary:
-            "Like many of my friends, I relied on my family’s support for most of my expenses in school. Now, I am having a difficult time making ends meet. I haven’t talked to my family for about 7 weeks now. For the first time in my life I am unable to connect with my family. And not knowing what kind of situation they are in is eating me alive. The thought of quitting school and going to where they are has crossed my mind multiple times. It has been very difficult to focus on school. I want to think that things will get better but I can't help but imagine the worst case scenarios. During these hard times, my friends have been helping me with the money they get from their families. But I am worried about what will happen to me after graduation. I won't have any place to live in or any family to lean on.",
-          name: "Dawit Hagos, 5th year Chemical student",
+            "Like many of my friends, I relied on my family’s support for most of my expenses in school. Now, I am having a difficult time making ends meet. I haven’t talked to my family for about 7 weeks now. For the first time in my life I am unable to connect with my family. And, the constant worry of not knowing the situation they are in is eating me alive.",
+          name: "Dawit Hagos, 5th year AAiT Student",
         },
         {
           img: "destawit.png",
+          link:"https://docs.google.com/document/d/1BnfRwXxfU_PmjkI7gy7RHtrgGuCKP-hJJEA7D-_ihVQ/edit?usp=sharing",
           summary:
             "When our school closed because of the pandemic we were forced to pause our education and go home. My father had passed away a few months before that so I took a job to financially support my family. With my new job I was able to support my mother and two sisters, and even save some money in the bank. Now I can’t go to my family and they can’t come to me. And because my account was frozen because my bank is in tigray, I find myself tagging along with my friends and asking for their help to even get things as important as a sanitary pad. I can’t attend my graduation, what should have been the happiest day after 5 years of hard work, because I don’t have money to cover my graduation costs.",
-          name: "Destawit fiseha, 5th year Chemical student",
+          name: "Destawit fiseha, 5th year AAiT Student",
         },
         {
           img: "efrem.png",
+          link:"https://docs.google.com/document/d/1hViA0IPfrFSCHm_pXjxGvXqQY4PC-VOTHW92ethuX4s/edit?usp=sharing",
           summary:
             "I haven’t been able to contact my family because phones don’t work where they are. I worry about them day and night. My brother was able to cross to Sudan and call me from there. He told me that he had no money and asked for my help. I told him I had nothing to give him, and that he should go to the refugee camp and try to get help there. I felt helpless, not being able to help my own brother was one of the most dreadful moments in my life. I can't focus on my school work because I worry about my family and what I will do after graduation. I don’t even have money to buy a mattress to sleep on and that has been stressful.",
-          name: "Efriem Tsegay, 5th year Chemical student",
+          name: "Efriem Tsegay, 5th year AAiT Student",
         },
       ],
       students: [
         {
           name: "Efrem Tsegay",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Daniel Haglush",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Dawit Hagos",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Daniel G/mariam",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Yared Luel",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Ashenafi",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Biniyam Aregawi",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Dawti Fiseha",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Birtukan",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Nathinal Kahsay",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Awaha Guash",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Muez Kalayu",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Tana",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Ataklti",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Solomon",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
         {
           name: "Goytom Giday",
-          dept: "5th year, Chemical student",
+          dept: "5th year, AAiT Student",
           phone: "tel:+25125328096",
         },
       ],
