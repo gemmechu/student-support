@@ -71,7 +71,7 @@
         </v-flex>
         <v-flex sm4>
 
-        <iframe class ="my-3" width="100%" height="100%" src="https://www.youtube.com/embed/jtNKpu9AXEU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class ="my-3" width="100%" height="100%" src="https://www.youtube.com/embed/KHO0sVKgOsY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </v-flex>
       </v-layout>
 
@@ -148,7 +148,7 @@
           </v-col>
           </v-row>
           <v-row class="mx-5">
-          <v-col cols="2" sm = "2" align-self="center"><a href=""><v-img  src="https://theme.zdassets.com/theme_assets/196447/72ab29b19ac3aa13a964e08152ed35a9e3ae95db.png"/></a> </v-col>
+          <v-col cols="2" sm = "2" align-self="center"><a target="_blank" href="https://www.gofundme.com/f/help-students-have-hope-again?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1"><v-img  src="https://theme.zdassets.com/theme_assets/196447/72ab29b19ac3aa13a964e08152ed35a9e3ae95db.png"/></a> </v-col>
           </v-row>
 
 
@@ -162,8 +162,8 @@
             </v-col>
         </v-row>
         <v-row class="mx-5">
-          <v-col cols="2" sm = "2" align-self="center"><a href=""><v-img width="30%" src="@/assets/fb.png"/></a> </v-col>
-            <v-col cols="2" sm = "2" align-self="center"><a href=""><v-img width="30%"  src="@/assets/insta.png"/></a> </v-col>
+          <v-col cols="2" sm = "2" align-self="center"><a href="https://www.facebook.com/helpstudents.aautigray.9/about" target="_blank"><v-img width="30%" src="@/assets/fb.png"/></a> </v-col>
+            <v-col cols="2" sm = "2" align-self="center"><a href="https://www.instagram.com/aau_student_aid/" target="_blank"><v-img width="30%"  src="@/assets/insta.png"/></a> </v-col>
             <v-col cols="2" sm = "2" align-self="center"><a href=""><v-img width="30%"  src="@/assets/twitter.png"/></a> </v-col>
         </v-row>
 
