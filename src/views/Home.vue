@@ -70,8 +70,7 @@
           <div class="body-1">{{ issueText }}</div>
         </v-flex>
         <v-flex sm4>
-
-        <iframe class ="my-3" width="100%" height="100%" src="https://www.youtube.com/embed/KHO0sVKgOsY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class ="my-3" width="100%" height="100%" src="https://www.youtube.com/embed/IW8uKtL0z_M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </v-flex>
       </v-layout>
 
