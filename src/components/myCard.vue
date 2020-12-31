@@ -9,10 +9,10 @@
                 contain
                 position="top"
                 xs3
-                class="mx-3 col-sm-3"
+                class="mx-3 col-sm-2"
                 :src="require('@/assets/' + story.img + '')"
             />
-            <v-col xs8 class="col-sm-8 mx-2">
+            <v-col xs8 class="col-sm-6 mx-2">
               <p
                 style="color: #333;font-family: minion-pro;font-style: italic;"
               >

@@ -71,7 +71,7 @@
         </v-flex>
         <v-flex sm4>
 
-        <iframe class ="my-3" width="100%" height="100%" src="https://www.youtube.com/embed/ovE_sVl1q7c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class ="my-3" width="100%" height="100%" src="https://www.youtube.com/embed/jtNKpu9AXEU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </v-flex>
       </v-layout>
 
@@ -84,7 +84,7 @@
         <v-flex xs12 mt-5>
           <div class="body-1">{{ whotoHelpText }}</div>
         </v-flex>
-        <v-flex xs12 class="mt-2">
+        <v-flex xs12 class="mt-2 mx-8">
           <br />
           <br />
           <myCard :story="stories[1]" />
@@ -140,42 +140,37 @@
           <div class="heading font-weight-bold" id="help">Ways to help</div>
         </v-flex>
         <v-flex xs12 mt-5>
-        <v-list-item>
-          <v-col cols="sm-2">
+
+          <v-row>
+            <v-col cols="sm-2">
             <v-icon style = "font-size:15px">mdi-circle</v-icon>
-            <span class="mx-6" style="font-size: larger;font-family: 'Roboto';font-weight: 500;">Donation</span>
+            <span class="mx-6" style="font-size: larger;font-family: 'Roboto';font-weight: 500;">Donate: </span>
           </v-col>
+          </v-row>
+          <v-row class="mx-5">
+          <v-col cols="2" sm = "2" align-self="center"><a href=""><v-img  src="https://theme.zdassets.com/theme_assets/196447/72ab29b19ac3aa13a964e08152ed35a9e3ae95db.png"/></a> </v-col>
+          </v-row>
 
-            <v-col class ="mr-5" cols="12" sm = "2" align-self="center"><a href=""><v-img  src="https://theme.zdassets.com/theme_assets/196447/72ab29b19ac3aa13a964e08152ed35a9e3ae95db.png"/></a> </v-col>
-            <v-col cols="12" sm = "2" align-self="center"><a href=""><v-img  src="https://theme.zdassets.com/theme_assets/59547/8c140ad8c81de24e1ba81ad4f755dfde80320761.png"/></a> </v-col>
 
-        </v-list-item>
 
-        <v-list-item>
-            <v-col cols="sm-4">
+
+
+        <v-row>
+          <v-col cols="sm-4">
             <v-icon style = "font-size:15px">mdi-circle</v-icon>
-            <span class="mx-6" style="font-size: larger;font-family: 'Roboto';font-weight: 500;">Share it on</span>
+            <span class="mx-6" style="font-size: larger;font-family: 'Roboto';font-weight: 500;">Share it on: `</span>
             </v-col>
-
-            <v-col cols="2" sm = "2" align-self="center"><a href=""><v-img width="30%" src="@/assets/fb.png"/></a> </v-col>
+        </v-row>
+        <v-row class="mx-5">
+          <v-col cols="2" sm = "2" align-self="center"><a href=""><v-img width="30%" src="@/assets/fb.png"/></a> </v-col>
             <v-col cols="2" sm = "2" align-self="center"><a href=""><v-img width="30%"  src="@/assets/insta.png"/></a> </v-col>
             <v-col cols="2" sm = "2" align-self="center"><a href=""><v-img width="30%"  src="@/assets/twitter.png"/></a> </v-col>
-
-        </v-list-item>
-
-        <v-list-item>
-            <v-col cols="sm-12">
-            <v-icon style = "font-size:15px">mdi-circle</v-icon>
-            <span class="mx-6" style="font-size: larger;font-family: 'Roboto';font-weight: 500;">Spreading word of mouth, Email  to colleagues friends and family members</span>
-            </v-col>
-
-        </v-list-item>
-
+        </v-row>
 
 
         </v-flex>
       </v-layout>
-      <v-layout wrap my-5>
+      <v-layout wrap my-5 >
         <v-flex xs12>
           <div class="heading font-weight-bold" id="aboutUs">About Us</div>
         </v-flex>
@@ -235,7 +230,7 @@ export default {
           img: "ahmed.jpg",
           name: "Ahmed Seid",
           dept: "Business Management & Finance",
-          school: "A Junior at the Concordia College in Moorhead",
+          school: "Concordia College",
           email: "mailto:ahmegoal@gmail.com",
           phone: true
           },
@@ -283,14 +278,14 @@ export default {
           img: "destawit.png",
           link:"https://docs.google.com/document/d/1BnfRwXxfU_PmjkI7gy7RHtrgGuCKP-hJJEA7D-_ihVQ/edit?usp=sharing",
           summary:
-            "When our school closed because of the pandemic we were forced to pause our education and go home. My father had passed away a few months before that so I took a job to financially support my family. With my new job I was able to support my mother and two sisters, and even save some money in the bank. Now I can’t go to my family and they can’t come to me. And because my account was frozen because my bank is in tigray, I find myself tagging along with my friends and asking for their help to even get things as important as a sanitary pad. I can’t attend my graduation, what should have been the happiest day after 5 years of hard work, because I don’t have money to cover my graduation costs.",
+            "I believe the current situation has not just been financially, but psychologically daunting to me. There is no support system placed in the university. No one is asking us how we’re doing or what we’re dealing with. It is so sad to feel so alone in the world yet surrounded by so many people.",
           name: "Destawit fiseha, 5th year AAiT Student",
         },
         {
           img: "efrem.png",
           link:"https://docs.google.com/document/d/1hViA0IPfrFSCHm_pXjxGvXqQY4PC-VOTHW92ethuX4s/edit?usp=sharing",
           summary:
-            "I haven’t been able to contact my family because phones don’t work where they are. I worry about them day and night. My brother was able to cross to Sudan and call me from there. He told me that he had no money and asked for my help. I told him I had nothing to give him, and that he should go to the refugee camp and try to get help there. I felt helpless, not being able to help my own brother was one of the most dreadful moments in my life. I can't focus on my school work because I worry about my family and what I will do after graduation. I don’t even have money to buy a mattress to sleep on and that has been stressful.",
+            "The fact that my future becomes uncertain after I graduate is truly concerning to me  as I am required to leave the campus and I have nowhere to stay too. Recently, i also got a call from my little brother as he shared a shocking news to me that he crossed a border to Sudan with no money or any sort of support. Hearing that news has been one of the most dreadful moments in my life, and I can only wish that I could get some stability until the war is over so that I can get a job and help out my brother and families.",
           name: "Efriem Tsegay, 5th year AAiT Student",
         },
       ],

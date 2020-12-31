@@ -2,7 +2,7 @@
  <div max-width="900">
           <v-row>
 
-            <v-col xs8 class="col-sm-8 mx-3">
+            <v-col xs8 class="col-sm-6 mx-3">
               <p
                 style="color: #333;font-family: minion-pro;font-style: italic;"
               >
@@ -23,7 +23,7 @@
             </v-col>
              <v-img
               contain
-                class="mx-2 col-sm-3"
+                class="mx-2 col-sm-2"
                 position="top"
                 :src="require('@/assets/' + story.img + '')"
 
