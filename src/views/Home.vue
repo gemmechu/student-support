@@ -82,6 +82,7 @@
         </v-flex>
         <v-flex xs12 mt-5>
           <div class="body-1">{{ whotoHelpText }}</div>
+          <span style="color: red;font-style: italic;"> for the sake of privacy we omit picture and name of the students</span>
         </v-flex>
         <v-flex xs12 class="mt-2 mx-8">
           <br />
@@ -96,18 +97,6 @@
           <br />
           <br />
         </v-flex>
-      </v-layout>
-      <v-layout wrap my-5>
-        <v-flex xs12 mb-5>
-          <div class="heading text-center" id="">
-            Students list
-          </div>
-        </v-flex>
-        <template v-for="(student, i) in students">
-          <v-flex sm4 md3 xs6 :key="i">
-            <studentInfo :student="student" />
-          </v-flex>
-        </template>
       </v-layout>
       <v-layout wrap my-5>
         <v-flex xs12>
@@ -209,15 +198,15 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from "@/components/HelloWorld.vue";
-import studentInfo from "@/components/studentInfo.vue";
 import myCard from "@/components/myCard.vue";
+import myCard2 from "@/components/myCard2.vue";
 import aboutUs from '@/components/aboutUs.vue';
 export default {
   name: "home",
   components: {
     // HelloWorld,
-    studentInfo,
     myCard,
+    myCard2,
     aboutUs
   },
   data() {
@@ -271,21 +260,21 @@ export default {
           img: "dave.png",
           summary:
             "Like many of my friends, I relied on my family’s support for most of my expenses in school. Now, I am having a difficult time making ends meet. I haven’t talked to my family for about 7 weeks now. For the first time in my life I am unable to connect with my family. And, the constant worry of not knowing the situation they are in is eating me alive.",
-          name: "Dawit Hagos, 5th year AAiT Student",
+          name: "P2, 5th year AAiT Student",
         },
         {
           img: "destawit.png",
           link:"https://docs.google.com/document/d/1BnfRwXxfU_PmjkI7gy7RHtrgGuCKP-hJJEA7D-_ihVQ/edit?usp=sharing",
           summary:
             "I believe the current situation has not just been financially, but psychologically daunting to me. There is no support system placed in the university. No one is asking us how we’re doing or what we’re dealing with. It is so sad to feel so alone in the world yet surrounded by so many people.",
-          name: "Destawit fiseha, 5th year AAiT Student",
+          name: "P1, 5th year AAiT Student",
         },
         {
           img: "efrem.png",
           link:"https://docs.google.com/document/d/1hViA0IPfrFSCHm_pXjxGvXqQY4PC-VOTHW92ethuX4s/edit?usp=sharing",
           summary:
             "The fact that my future becomes uncertain after I graduate is truly concerning to me  as I am required to leave the campus and I have nowhere to stay too. Recently, i also got a call from my little brother as he shared a shocking news to me that he crossed a border to Sudan with no money or any sort of support. Hearing that news has been one of the most dreadful moments in my life, and I can only wish that I could get some stability until the war is over so that I can get a job and help out my brother and families.",
-          name: "Efriem Tsegay, 5th year AAiT Student",
+          name: "P3, 5th year AAiT Student",
         },
       ],
       students: [

@@ -21,13 +21,6 @@
               </p>
 
             </v-col>
-             <v-img
-              contain
-                class="mx-2 col-sm-2"
-                position="top"
-                :src="require('@/assets/' + story.img + '')"
-
-            />
           </v-row>
         </div>
 </template>
