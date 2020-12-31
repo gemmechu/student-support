@@ -233,7 +233,8 @@ export default {
           dept: "Business Management & Finance",
           school: "Concordia College",
           email: "mailto:ahmegoal@gmail.com",
-          phone: true
+          phone: true,
+          number: "tel:+14049339682"
           },
           {
           img: "simret.jpg",

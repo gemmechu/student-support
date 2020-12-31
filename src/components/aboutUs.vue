@@ -10,7 +10,7 @@
         <v-icon>mdi-email</v-icon>
       </v-btn>
 
-      <v-btn v-if="info.phone" icon :href="info.email" target="_blank">
+      <v-btn v-if="info.phone" icon :href="info.number" target="_blank">
         <v-icon>mdi-phone</v-icon>
       </v-btn>
 
