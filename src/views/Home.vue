@@ -117,18 +117,19 @@
           </div>
         </v-flex>
         <v-flex xs12 mt-5 mx-8>
-              <v-list dense>
+              <v-list>
         <v-list-item
 
           v-for="(item, i) in whyDonation"
           :key="i"
+
         >
           <v-list-item-icon>
             <v-icon v-text="item.icon" style = "font-size:1em"></v-icon>
           </v-list-item-icon>
-          <v-list-item-content>
-            <v-list-item-title style="font-size: larger;font-family: Roboto;font-weight: 400;" v-text="item.text"></v-list-item-title>
-          </v-list-item-content>
+
+          <v-list-item-title  style="font-size: larger;font-family: Roboto;font-weight: 400;" v-text="item.text"></v-list-item-title>
+
         </v-list-item>
 
     </v-list>
@@ -254,7 +255,7 @@ export default {
       ],
       whyDonation: [
         { text: 'Gives students the financial help to get a place to stay while searching for a Job', icon: 'mdi-circle' },
-        { text: 'Covers basic expenses such as: transportation, mobile air time, groceries ...', icon: 'mdi-circle' },
+        { text: 'Covers basic expenses such as: transportation, mobile air time, groceries etc', icon: 'mdi-circle' },
         { text: 'helps students to be independent until it is safe to return to their families', icon: 'mdi-circle' },
       ],
       missionText:
