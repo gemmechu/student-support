@@ -211,7 +211,6 @@
 // import HelloWorld from "@/components/HelloWorld.vue";
 import studentInfo from "@/components/studentInfo.vue";
 import myCard from "@/components/myCard.vue";
-import myCard2 from "@/components/myCard2.vue";
 import aboutUs from '@/components/aboutUs.vue';
 export default {
   name: "home",
@@ -219,7 +218,6 @@ export default {
     // HelloWorld,
     studentInfo,
     myCard,
-    myCard2,
     aboutUs
   },
   data() {
