@@ -224,7 +224,7 @@ export default {
   },
   data() {
     return {
-      aboutText: "We are students from  AAU and Concordia college trying to help graduating students in AAU who are currently struggling because of the ongoing war in Tigray.",
+      aboutText: "We are students from  Addis Ababa University and Concordia college trying to help graduating students in AAU who are currently struggling because of the ongoing war in Tigray.",
       infos:[
         {
           img: "ahmed.jpg",
@@ -253,9 +253,9 @@ export default {
 
       ],
       whyDonation: [
-        { text: 'Give students to rent place to stay while searching a job', icon: 'mdi-circle' },
-        { text: 'cover basic expenses Taxi, mobile air time, Grossaries', icon: 'mdi-circle' },
-        { text: 'Allow students to be independent', icon: 'mdi-circle' },
+        { text: 'Gives students the financial help to get a place to stay while searching for a Job', icon: 'mdi-circle' },
+        { text: 'Covers basic expenses such as: transportation, mobile air time, groceries ...', icon: 'mdi-circle' },
+        { text: 'helps students to be independent until it is safe to return to their families', icon: 'mdi-circle' },
       ],
       missionText:
         "Our mission is to alleviate the financial difficulties faced by AAU students from Tigray by mobilizing donations from generous donors like you.",

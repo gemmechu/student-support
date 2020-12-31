@@ -16,9 +16,9 @@
               <p
                 style="color: #333;font-family: minion-pro;font-style: italic;"
               >
-                <span class="mx-2" style="font-size: x-large; font-weight: 600;">" </span>
+                <span class="mx-1" style="font-size: x-large; font-weight: 600;">" </span>
                   {{story.summary}}
-                 <span class="mx-2" style="font-size: x-large; font-weight: 600;">"</span>
+                 <span class="mx-1" style="font-size: x-large; font-weight: 600;">"</span>
                   <br>
 
                 <v-card-subtitle
