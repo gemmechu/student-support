@@ -224,7 +224,7 @@ export default {
   },
   data() {
     return {
-      aboutText: "We are students from in AAU and from concordia trying to help students in AAU who are struggling because of current ongoing war in Tigray",
+      aboutText: "We are students from  AAU and Concordia college trying to help graduating students in AAU who are currently struggling because of the ongoing war in Tigray.",
       infos:[
         {
           img: "ahmed.jpg",
