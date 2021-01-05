@@ -138,7 +138,7 @@
           </v-col>
           </v-row>
           <v-row class="mx-5 col-sm-3">
-          <v-col align-self="center"><a target="_blank" href="https://www.gofundme.com/f/help-students-have-hope-again?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1"><v-img  src="https://theme.zdassets.com/theme_assets/196447/72ab29b19ac3aa13a964e08152ed35a9e3ae95db.png"/></a> </v-col>
+          <v-col align-self="center"><a target="_blank" href="https://www.gofundme.com/f/help-students-from-tigray-have-hope-again?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1"><v-img  src="https://theme.zdassets.com/theme_assets/196447/72ab29b19ac3aa13a964e08152ed35a9e3ae95db.png"/></a> </v-col>
           </v-row>
 
 
