@@ -130,20 +130,9 @@
           <div class="heading font-weight-bold" id="help">Ways to help</div>
         </v-flex>
         <v-flex xs12 mt-5>
-
-          <v-row>
-            <v-col cols="sm-2">
-            <v-icon style = "font-size:15px">mdi-circle</v-icon>
-            <span class="mx-6" style="font-size: larger;font-family: 'Roboto';font-weight: 500;">Donate: </span>
-          </v-col>
-          </v-row>
-          <v-row class="mx-5 col-sm-3">
-          <v-col align-self="center"><a target="_blank" href="https://www.gofundme.com/f/help-students-from-tigray-have-hope-again?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1"><v-img  src="https://theme.zdassets.com/theme_assets/196447/72ab29b19ac3aa13a964e08152ed35a9e3ae95db.png"/></a> </v-col>
-          </v-row>
-
-
-
-
+          <v-row class="">
+          <iframe style="height: 15em;" src="https://www.gofundme.com/f/help-students-from-tigray-have-hope-again/widget/medium/" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </v-row>
 
         <v-row>
           <v-col cols="sm-4">
@@ -152,9 +141,9 @@
             </v-col>
         </v-row>
         <v-row class="mx-5">
-          <v-col class="col-sm-2"  align-self="center"><a href="https://www.facebook.com/helpstudents.aautigray.9/about" target="_blank"><v-img width="30%" src="@/assets/fb.png"/></a> </v-col>
+          <v-col class="col-sm-2"  align-self="center"><a href="https://www.facebook.com/dialog/share?app_id=407682420960&display=popup&href=https%3A%2F%2Fwww.gofundme.com%2Ff%2Fhelp-students-from-tigray-have-hope-again%3Futm_source%3Dfacebook%26utm_medium%3Dsocial%26utm_campaign%3Dp_cp%2Bshare-sheet" target="_blank"><v-img width="30%" src="@/assets/fb.png"/></a> </v-col>
             <v-col class="col-sm-2"  align-self="center"><a href="https://www.instagram.com/aau_student_aid/" target="_blank"><v-img width="30%"  src="@/assets/insta.png"/></a> </v-col>
-            <v-col class="col-sm-2"  align-self="center"><a href=""><v-img width="30%"  src="@/assets/twitter.png"/></a> </v-col>
+            <v-col class="col-sm-2"  align-self="center"><a href="https://twitter.com/intent/tweet?lang=en&text=Help%20Students%20from%20Tigray%20-%20have%20hope%20again&url=https%3A%2F%2Fwww.gofundme.com%2Ff%2Fhelp-students-from-tigray-have-hope-again%3Futm_source%3Dtwitter%26utm_medium%3Dsocial%26utm_campaign%3Dp_cp%2Bshare-sheet"><v-img width="30%"  src="@/assets/twitter.png"/></a> </v-col>
         </v-row>
 
 
